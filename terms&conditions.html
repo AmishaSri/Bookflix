@@ -1,0 +1,665 @@
+<!doctype html>
+    <html>
+        <head>
+           <title>Bookflix</title>
+           <link rel="shortcut icon" href="public/images/favicon.ico">
+           <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+           <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+           <meta charset="utf-8">
+           <meta name="viewport" content="=width=device-width,initial-scale=1.0">
+           <meta name="keywords" content="best sellers,rom-com,fiction,non-fiction,mystery,magaines,academics,etc>
+           <meta name="description" content="Digital WonderLand for Readers">
+        <style>
+        body{
+                background-color:lightcyan;
+            }
+            .header-title{
+                    background-color:lightgreen;
+                    width:100%;
+                    height:50px;
+                    display:flex;
+                    justify-content: space-between;
+            }
+              .title{
+                font-size: 30px;
+                font-weight: bold;
+                color:black;
+                margin-top: 5px;
+              }
+              .search-box{
+                background-color:white;
+                width:600px;
+                color:gray;
+                font-size: 20px;
+                justify-content: space-between;
+                height:30px;
+                margin-top: 5px;
+                display:flex;
+                justify-content: space-between;
+                
+              }
+              .pincode{
+                font-size: 15px;
+                font-weight: bold;
+                color:black;
+               
+              }
+              .bi-person-circle{
+                  font-size: 20px;
+                margin-left:17px;
+                 
+              }
+              .bi-cart4{
+                font-size:20px;
+                margin-right: 20px;
+              }
+              .search{
+                background-color: orange;
+                font-size: 20px;
+                font-weight: bold;
+                color:black;
+                width:40px;
+                justify-content: center;
+              }
+          .lang{
+            margin-top:10px;
+            font-weight: bold;
+            font-size:20px;
+          }
+          .header-title div:hover{
+            border:2px solid black;
+          }
+          nav div:hover{
+            border:2px solid white;
+          }
+            .categories{
+                background-color:darkcyan;
+                width:100%;
+                height:30px;
+                color:white;
+                display: flex;
+               justify-content: space-between;
+               padding-top: 7px;
+            }
+            .header-body{
+               display:grid;
+              grid-template-columns: 2fr 8fr 2fr;
+              grid-gap:20px;
+             
+            }
+            .head-p3a{
+              border:5px solid grey;
+              font-size:20px;
+              border-radius:5px;
+              height:275px;
+              width:280px;
+            }
+            .btn-cart{
+              background-color: yellow;
+              height:30px;
+              width:250px;
+              border-radius:30px;
+              margin-left: 10px;
+              margin-top: 10px;
+              border:none;
+            }
+            .btn-buy{
+              background-color: orange;
+              height:30px;
+              width:250px;
+              border-radius:30px;
+              margin-left:10px;
+              margin-top: 10px;
+              border:none;
+            }
+            .head-p3b{
+              height:150px;
+              width:280px;
+              border:5px solid grey;
+              border-radius:10px;
+              
+            }
+            .btn-others{
+              background-color: lightblue;
+              width:250px;
+              height:30px;
+              border-radius:30px;
+              border: 1px solid darkcyan;
+            }
+            .head-p3c{
+              height:80px;
+              width:280px;
+              border:5px solid grey;
+              border-radius:10px;
+             
+            }
+            .wishlist{
+              border:1px solid black;
+              height: 30px;
+              text-align: center;
+            }
+            .head-p2a{
+              display: flex;
+              justify-content: space-between;
+              border-bottom: 1px solid black;
+            }
+             .star{
+              color:orange;
+             }
+             .btn-price{
+              height:55px;
+              width:200px;
+              border:5px solid darkcyan;
+              background-color: lightblue;
+              border-radius: 10px;
+             }
+             .border{
+              border-bottom:1px solid black;
+             }
+             .head-p2b{
+              height:100px;
+              padding-top: 20px;
+             }
+             section{
+              border-top: 1px solid black;
+             }
+             .btn-all{
+               height:50px;
+             border-radius: 10px;
+             }
+             .sec-p1{
+              display:grid;
+              grid-template-columns: 1fr 1fr 2fr 8fr;
+              border-bottom: 1px solid black;
+             }
+             .sec-p2{
+              display:grid;
+              grid-template-columns: 2fr 2fr 2fr 2fr 4fr;
+              grid-gap:80px;
+              border-bottom:1px solid black;
+             }
+             .sec-p2a{
+              border-right :1px solid black;
+              padding-right: 20px;
+              padding-bottom: 40px;
+             }
+             .sec-p3{
+              display:flex;
+              justify-content: space-between;
+             }
+             .sec-p4{
+              display:flex;
+              justify-content: space-around;
+              border-bottom:1px solid black ;
+              padding-bottom: 40px;
+             }
+             .sec-p5{
+              display: flex;
+              justify-content: space-around;
+              border-bottom: 1px solid black;
+              padding-bottom: 40px;
+             }
+             .card{
+              height:400px;
+              width:400px;
+              background-color:rgba(64, 57, 113,0.9);
+              color:white;
+             }
+             .bi-quote{
+              margin-left: 150px;
+              font-size: 70px;
+             }
+             .card-body{
+              font-size: 25px;
+              font-weight: bold;
+              text-align: center;
+              margin-top:10px;
+             }
+             .card-footer{
+                   background-color: rgba(255,255,255,0.5);
+                   color:white;
+                   font-weight: bold;
+                   font-size: 20px;
+                   height:40px;
+             }
+             .sec-p6{
+              display:grid;
+              grid-template-columns: 2fr 10fr;
+              border-bottom:1px solid black;
+             }
+              .sec-p7{
+                      display:grid;
+                      grid-template-columns: 3fr 7fr 2fr;
+                      grid-gap:40px;
+              }
+              meter{
+                color:orange;
+                height:40px;
+                width:150px;
+                
+              }
+              
+        </style>
+        </head>
+        <body class="container-fluid">
+         <header>
+        <div class="header-title">
+            <div class="title"><span class="bi bi-bookmarks-fill"></span>Bookflix</div>
+            <div class="pincode"><span class="bi bi-geo-alt-fill"></span>Delivery to<br>___________</div>
+            <div class="search-box">
+                <div> &nbsp;Search</div>
+                <div class="bi bi-search search"></div>
+            </div>
+            <div class="lang"><span class="bi bi-globe2"></span>EN<span class="bi bi-chevron-down"></span></div>
+            <div><div class="bi bi-person-circle"></div>Account</div>
+            <div><div class="bi bi-cart4"></div>Cart</div>
+        </div>
+        <nav class="categories">
+            <div class="bi bi-list">All</div>
+            <div> Bookflix eBooks</div>
+            <div>Best Sellers</div>
+            <div>AudioBooks</div>
+            <div>Bookflix Top 100</div>
+            <div>Bookflix Unlimited</div>
+            <div>Bookflix library</div>
+            <div>Sell</div>
+            <div>Customer Services</div>
+            <div>About Bookflix</div>
+        </nav>
+        <div class="header-body">
+      <div class="mt-1"> 
+          <img src="public/Images/terms.jpg">
+         <div>Roll over image to zoom in</div>
+         <div><button>Read Sample</button><button><span class="bi bi-play-fill"></span>Audible Sample</button></div>
+         <div>___________________________________</div><br>
+         <div>Follow the Author</div>
+         <div><span><img src="public/Images/la.jpg" height="50" width="50"></span><span>Lauren Asher</span><span><button>Follow</button></span></div>
+      </div>
+      <div class="mt-1">
+        <h2>Terms and Conditions: the TikTok sensation! Meet the Dreamland Billionaires... Bookflix Edition&nbsp; &nbsp;
+          <span class="bi bi-box-arrow-up"></span></h2>
+          <div>by Lauser Asher(Author) |  Format: Bookflix Edition</div>
+          <div class="star">4.4<span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span><span class="bi bi-star-fill">
+                 </span><span class="bi bi-star-fill"></span>&nbsp; 
+                 <span class="bi bi-chevron-down"> 35,849 ratings</span></div>
+          <div class="head-p2a">
+            <div>Book 2 of 3: DreamLand Billionaires</div>
+            <div> See all formats and editions</div>
+          </div>
+          <div>
+            <span><button class="btn-price mt-2">Bookflix Edition<br>&#8377;228.00</button></span>
+            <span><button class="btn-price mt-2"><span class="bi bi-play-circle">AudioBook</span><br>&#8377;0.00</button></span>
+            <span><button class="btn-price mt-2">Paperback<br>&#8377;387</button></span>
+          </div>
+          <div>
+            <span>&nbsp; &nbsp; &nbsp; &nbsp;Read our Free App</span>
+            <span>&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;Free with your audible trial</span> 
+            <span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;3 New from &#8377;249.00</span>
+          </div><br>
+          <div>Couldn't get enough of The Fine Print?
+            Fall in love with the next book in Lauren Asher's hot and sexy Dreamland Billionaires series . . .</div>
+         <div>
+          <h3>Declan</h3>
+          <p>I'm destined to become the next CEO of my family's media empire.<br>
+            The only problem? My grandfather's inheritance clause.<br>
+            Fulfilling his dying wish of getting married and having an heir seemed impossible until my assistant volunteered for the job.<br>
+            Our marriage was supposed to be the perfect solution to my biggest problem.<br>
+            But the more we act in love for the public, the more unsure I feel about our contract.<br>
+            Caring about Iris was never part of the deal.<br>
+            Especially not when breaking her heart is inevitable.
+          </p>
+          <h3>Iris</h3>
+          <p>
+            My plan to marry Declan was simple in theory.<br>
+           Move in together. Throw a wedding. Have a baby.<br>
+                We set rules to prevent any kind of issues.<br>
+            Ones that were never meant to be broken, no matter how much Declan tempts me.<br>
+            But what happens when our fake relationship bleeds into our real one?<br>
+           Falling in love was never an option.<br>
+           At least not for me.
+          </p>
+         </div>
+         <div>Terms and Conditions is the second book in a series of spicy standalone novels featuring three billionaire brothers.</div>
+          <div class="border"><span class="bi bi-chevron-down"></span>Read Less</div>
+          <div class="head-p2a head-p2b">
+            <div>
+              <div>Book 2 of 3</div>
+              <div class="bi bi-distribute-horizontal"></div>
+              <div>Dreamland Billionaires</div>
+            </div>
+            <div>
+              <div>Print Length</div>
+              <div class="bi bi-journal-bookmark-fill"></div>
+              <div>460 Pages <span class="bi bi-chevron-down"></span></div>
+            </div>
+            <div>
+              <div>Language</div>
+            <div class="bi bi-globe-americas"></div>
+              <div>English</div>
+            </div>
+            <div>
+              <div>Publisher</div>
+            <div class="bi bi-buildings"></div>
+              <div>Piatkus</div>
+            </div>
+            <div>
+              <div>Publishing Date</div>
+            <div class="bi bi-calendar4-week"></div>
+              <div>24 Febraury 2022</div>
+            </div>
+          </div>
+          <div><br>Due to its large file size, this book may take longer to download</div>
+          <div><br><span class="bi bi-chat-right-text"></span>&nbsp;Report incorrect product information.</div>
+        </div>
+      <div>
+          <div class="head-p3a ms-1 mt-1">
+            <div class="">Digital List Price : &#8377;<s>493.50</s></div>
+            <div>Bookflix Price: &nbsp; &nbsp; &#8377;228.00
+            <br> &nbsp;save &#8377; 265.50(54%)<br>
+             &nbsp; price includes GST</div>
+            <div>Sold By: &nbsp; Amazon Asia Pacific &nbsp; &nbsp; &nbsp; &nbsp; Holding Private Limited </div>
+            <div><button class="btn-cart">Add to eBook Cart</button></div>
+            <div><button class="btn-buy">Buy Now</button></div>
+          </div>
+          <div class="head-p3b ms-1 mt-1">
+              <div>Buy for others</div>
+              <div>Give as a gift or purchase for a team or group.</div>
+              <div>Learn more <span class="bi bi-chevron-down"></span></div>
+              <div><button class="btn-others ms-2 mt-1 fw-bold"> Buy for others</button></div>
+          </div>
+          <div class="head-p3c ms-1 mt-1">
+               <div><button class="btn-others ms-2 mt-1 fw-bold">Send a Free Sample</button></div>
+               <div>deliver to your Bookflix Library</div>
+          </div>   
+          <div class="wishlist ms-1 mt-1 fw-bold d-flex justify-content-between">
+           <div>Add to Wish List </div><div class="bi bi-chevron-down"></div>
+          </div> 
+      </div>
+      </div>
+        </header>
+        <section>
+          <div>
+            <span><button class="btn-price fw-bold ms-1 mt-1">Next 2 for you in the series &#8377; 460.75</button>
+              <button class="btn-all ms-4 fw-bold">All 3 for you in the series<br> &#8377;665.95</button></span>
+          </div><br>
+         <div><span class="h4">Next 2 for you in this series</span><span><a>&nbsp; &nbsp;see full series...<span class="bi bi-chevron-right"></span></a></span></div> 
+       <br>
+         <div class="sec-p1">
+          <div><img src="public/Images/terms-sm.jpg" height="150" width="100"><div>Book 2</div></div>
+          <div><img src="public/Images/final.jpg"  height="150" width="100"><div>Book 3</div></div>
+        <div><div>Total Bookflix Price &#8377;460.75</div>
+           <div>inclusive all taxes</div><div><button class="btn-buy">Buy Now</button></div>
+          <div><br>Sold by: Amazon Asia-Pacific Holdings Private Limited</div></div>
+       </div>
+       <div><h2>Books in this Series:(3 books)</h2></div>
+       <div class="sec-p2">
+        <div class="sec-p2a">
+          <div>Complete Series</div>
+          <img src="public/Images/dreamland-series.jpg" height="180" width="200">
+          <div>DreamLand Billionaires</div>
+          <div>Bookflix Edition</div>
+        </div>
+       <div><img src="public/Images/fine.jpg" height="120" width="80">
+       <div>The Fine Print: the <br>grumpy x sunshine <br>TikTok sensation! <br>Meet the Dreamland <br>Billionaires...</div>
+        <div><span class="bi bi-chevron-right"></span>Lauser Asher</div>
+         <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+          <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+          <span class="bi bi-star"></span><span>(41,828)</span></div>
+          <div>Bookflix Edition</div>
+          <div> &#8377;205.20</div>
+        </div>
+        <div><img src="public/Images/term-ssm.jpg" height="120" width="80">
+          <div>Terms and Conditions: the TikTok sensation! Meet the Dreamland Billionaires</div>
+          <div><span class="bi bi-chevron-right"></span>Lauser Asher</div>
+          <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-half"></span><span>(35,904)</span></div>
+            <div>Bookflix Edition</div>
+            <div> &#8377;228.00</div>
+        </div>
+        <div><img src="public/Images/final-sm.jpg" height="120" width="80">
+          <div>Final Offer: the Sunday Times bestselling second chance romance - 
+            Meet the new Dreamland billionaire...(Dreamland Billionaires Book 3)</div>
+            <div><span class="bi bi-chevron-right"></span>Lauser Asher</div>
+            <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+              <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+              <span class="bi bi-star-half"></span><span>(25,747)</span></div>
+              <div>Bookflix Edition</div>
+              <div> &#8377;232.75</div>
+        </div>
+         </div>
+         <div class="sec-p3">
+         <div><h2>Customers who read this book also read</h2></div>
+         <div><h4>Page 1 of 8<span class="bi bi-three-dots-vertical"></span></h4></div>
+        </div>
+         <div class="sec-p4">
+          <div>
+            <div><img src="public/Images/fine.jpg" height="200" width="120"></div>
+            <div>The Fine Print: the<br> grumpy x sunshine <br>TikTok sensation! <br>Meet the Dreamland<br> Billionaires...</div>
+            <div><span class="bi bi-chevron-right"></span>Lauser Asher</div>
+            <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                <span class="bi bi-star"></span><span>(41,828)</span></div>
+            <div>Bookflix Edition</div>
+            <div> &#8377;232.75</div></div>
+            <div>
+              <div><img src="public/Images/pride.jpg" height="200" width="120"></div>
+              <div>King of Pride (Kings of Sin) </div>
+              <div><span class="bi bi-chevron-right"></span>Ana Huang</div>
+             <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+              <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+              <span class="bi bi-star-half"></span><span>(16,107)</span></div>
+              <div>Bookflix Edition</div>
+              <div> &#8377;209.00</div>
+         </div>
+         <div>
+         <div><img src="public/Images/final-sm.jpg"height="200" width="120"></div>
+         <div>Final Offer: the Sunday <br>Times bestselling second <br>chance romance - Meet<br> the new Dreamland billionaire...</div>
+          <div><span class="bi bi-chevron-right"></span>Lauser Asher</div>
+            <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-half"></span><span>(25,757)</span></div>
+            <div>Bookflix Edition</div>
+            <div> &#8377;232.75</div>
+         </div>
+         
+         <div>
+         <div><img src="public/Images/wrath.jpg" height="200" width="120"></div>
+         <div>King of Wrath: from <br>the bestselling author<br> of the Twisted series<br> (Kings of Sin)</div>
+          <div><span class="bi bi-chevron-right"></span>Ana Huang</div>
+          <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+           <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+           <span class="bi bi-star-half"></span><span>(33,981)</span></div>
+           <div>Bookflix Edition</div>
+           <div> &#8377;277.30</div>
+         </div>
+         <div>
+          <div><img src="public/Images/games.jpg"  height="200" width="120"></div>
+          <div>Twisted Games: the TikTok <br>sensation! Fall into a world<br> of addictive romance...</div>
+            <div><span class="bi bi-chevron-right"></span>Ana Huang</div>
+          <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+           <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+           <span class="bi bi-star-half"></span><span>(45,194)</span></div>
+           <div>Bookflix Edition</div>
+           <div> &#8377;204.25</div>
+         </div>
+         <div>
+          <div><img src="public/Images/hate.jpg"  height="200" width="120"></div>
+          <div>Twisted Hate: the TikTok<br> sensation! Fall into a world <br>of addictive romance...</div>
+            <div><span class="bi bi-chevron-right"></span>Ana Huang</div>
+          <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+           <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+           <span class="bi bi-star-half"></span><span>(33,245)</span></div>
+           <div>Bookflix Edition</div>
+           <div> &#8377;207.10</div>
+         </div>
+         <div>
+          <div><img src="public/Images/lies.jpg" height="200" width="120"></div>
+          <div>Twisted Lies: the TikTok <br>sensation! Fall into a world <br>of addictive romance...</div>
+            <div><span class="bi bi-chevron-right"></span>Ana Huang</div>
+          <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+           <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+           <span class="bi bi-star-half"></span><span>(33,617)</span></div>
+           <div>Bookflix Edition</div>
+           <div> &#8377;277.30</div>
+         </div>
+         </div>
+         <h2>Popular Highlights in this book</h2>
+         <h3>What are popular highlights?</h3>
+         <div class="sec-p5">
+          <div class="card">
+           <div class="bi bi-quote"></div>
+           <div class="card-body">“Special is the last word I would<br> use to describe you.” It feels far too generic for someone like her.</div>
+          <div class="card-footer">Highlighted by 821 Kindle readers</div>
+          </div>
+          <div class="card">
+            <div class="bi bi-quote"></div>
+            <div class="card-body">“Get my wife whatever she wants.”<br> Declan doesn’t look up from his tablet.</div>
+          <div class="card-footer">Highlighted by 763 Kindle readers</div>
+          </div>
+          <div class="card">
+            <div class="bi bi-quote"></div>
+            <div class="card-body"> “One day that mouth is going <br> to get youin trouble.”<br> His voice lowers.</div>
+          <div class="card-footer"> Highlighted by 726 Kindle readers</div>
+          </div>
+        </div>
+        <h1>Product Description</h1>
+          <h2>Book Description</h2>
+          <h4>The second book in Lauren Asher's hot and sexy Dreamland Billionaires series --This text refers to an alternate Booktroverts_edition edition.</h4>
+          <h2>About the Author</h2>
+          <p>Plagued with an overactive imagination, Lauren spends her free time reading and writing. Her dream is to travel to all the places she writes about. She enjoys writing about flawed yet relatable characters you can't help loving. She likes sharing fast-paced stories with angst, steam, and the emotional spectrum.</p>
+        <p>Her extra-curricular activities include watching YouTube, binging old episodes of Parks and Rec, and searching Yelp for new restaurants before choosing her trusted favorite. She works best after her morning coffee and will never deny a nap.</p>
+        <p class="border">--This text refers to an alternate Booktroverts_edition edition.</p>
+        <h1>Product details</h1>
+        <p>ASIN  : B09QHSPBGZ</p>
+       <p>  Publisher : Piatkus (24 February 2022)</p> 
+         <p>Language  :  English</p>
+       <p>   File size  :  22560 KB</p>
+       <p>   Text-to-Speech :  Enabled</p>
+         <p>Screen Reader : Supported</p>
+       <p>  Enhanced typesetting  : Enabled</p> 
+       <p>   X-Ray  :  Not Enabled</p> 
+       <p>   Word Wise  :Enabled</p> 
+        <p> Print length :460 pages</p>
+        <p>Best Sellers Rank: #3,933 in Kindle Store (See Top 100 in Kindle Store)<br>
+          #942 in Contemporary Romance (Kindle Store)<br>
+          #1,016 in Contemporary Romance (Books)</p>
+          <p class="border">Customer Reviews:4.4<span class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+            <span class="bi bi-star"></span> <span class="bi bi-chevron-down"></span><span> 35,908 ratings</span></span></p>
+           <h1>About the author</h1>
+           <p>Follow authors to get new release updates, plus improved recommendations.</p>
+           <div class="sec-p6">
+            <div><img src="public/Images/la.jpg" height="150px" width="200px">
+              <div><button>Follow</button></div>
+              </div>
+            <div><h2>Lauren Asher</h2>
+             <p>Self-diagnosed with an overactive imagination, Lauren spends her free time reading and writing. Her dream is to travel to all the places she writes about. She enjoys writing about flawed yet relatable characters you can’t help loving.
+               She likes sharing fast-paced stories with angst, steam, and the emotional spectrum.</p> 
+               <p>Her extra-curricular activities include watching YouTube, binging old episodes of Parks and Rec, and searching Yelp for new restaurants before choosing her trusted favorite.
+                 She works best after her morning coffee and will never deny a nap.</p>
+                 <span class="bi bi-chevron-up">Read less</span> 
+            </div>
+           </div>
+           <div class="sec-p7">
+                <div>
+                  <div class="h5">Customer reviews</div>
+                  <div class="star">
+                    <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span><span class="bi bi-star"></span><span>4.4 out of 5</span>
+                  </div>
+                  <div>36,157 global ratings</div>
+                <div>5 star<span><meter min="1" value="4" max="5"></meter></span>80%</div>
+                <div>4 star<span><meter min="1" value="3.5" max="5"></meter></span>60%</div>
+                <div>3 star<span><meter min="1" value="3" max="5"></meter></span>50%</div>
+                <div>2 star<span><meter min="1" value="2.5" max="5"></meter></span>40%</div>
+                <div>1 star<span><meter min="1" value="2" max="5"></meter></span>20%</div>
+                 <div><span class="bi bi-chevron-down">How are ratings calculated?</span></div> 
+                </div>
+                
+                  <div>
+                    <div class="d-flex justify-content-between">
+                  <div>Reviews with images</div>
+                  <div>See all photos<span class="bi bi-chevron-right"></span></div>
+                </div>
+                  <div class="ms-5 mt-2 border"><img class="ms-2 rounded-2" src="public/Images/reveiw1.jpg" width="120" height="120">
+                  <img  class="ms-2 rounded-2" src="public/Images/review2.jpg" width="120" height="120"><img  class="ms-2 rounded-2" src="public/Images/review3.jpg" width="120" height="120">
+                <img class="ms-2 rounded-2" src="public/Images/review4.jpg" width="120" height="120"></div>
+                   <div class="mt-2">
+                    <div class="fw-bold">Read reveiw that mention</div>  
+                    <div><button> marraige of convinience</button>
+                     <button>fine print</button> <button>fake marraige</button>
+                     <button>declan is grumpy</button> <button>declan and iris</button></div>
+                    <div class="mt-2"><button>book was good</button> <button>pages</button> <button>heart</button>
+                     <button>romance</button> <button>boss</button> <button>despite</button>
+                     <button>sunshine</button> <button>Condition</button></div> 
+                     <div class="mt-2"><button>grandfather</button> <button>heroine</button> <button>Lauren</button></div>
+                   </div>
+                   <div class="mt-4">
+                     <button class="rounded-5">Top reviews&nbsp; &nbsp; &nbsp;<span class="bi bi-chevron-down"></span></button>
+                   </div>
+                   <div class="fw-bold mt-4">Top reviews from India</div>
+                   <div><img class="rounded-circle" src="public/Images/review.jpeg" height="30" width="30"> 10/11</div>
+                   <span class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>
+                  </span><span class="fw-bold">&nbsp; A 4.5 read with an impressive writing style!(No SPOILERS)</span>
+                   </span>
+                     <div>Reviewed in India on 11 June 2023</div>
+                     <div class="text-danger fw-bold h6">Verified purchase</div>
+                     <p>The book is about the second Kane brother, Declan, who, according to his grandfather's will, has to marry and have kids in order to become the next CEO of Dreamland. The engagement is arranged with a girl but apparently she quits all of a sudden leaving our heroine, Iris, to enter the story and marry Declan.</p>
+                     <p>This book is primarily grumpy x sunshine type where Iris is the sunshine, optimistic and loves her life despite her childhood and present conditions. Declan is the grumpy type where he doesn't care about anyone's emotions, does his work like a machine, short-tempered type. It's a fake marriage and finally turns into a real one. The story line seems casual, nothing new but the progress in the story, the flaws in the main characters, the dialogues.... It was absolutely amazing, and mostly, very original. It doesn't feel like I'm reading a book but actually reading a real story like it happened in someone's life. The gradual change in Declan's character is slow but noticeable and that's great! He was the most flawed character in the book but he stole my heart. The ending of the book is also a good asset. Only the over romance at times was not my cup of tea and I had to skip few pages.</p>
+                     <div class="mt-2"><span class="bi bi-chevron-down"></span>See more </div>
+                     <div>One person found this helpful</div>
+                     <div class="mt-2"><button>Helpful</button>  &nbsp; Report</div>
+                     <div class="mt-3"><img src="public/Images/review.jpeg" class="rounded-circle" height="30" width="30"> &nbsp; Simone</div>
+                     <span class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                  </span><span class="fw-bold">&nbsp; Best in the series</span>
+                   </span>
+                   <div>Reviewed in India on 27 August 2023</div>
+                   <div class="text-danger fw-bold h6">Verified Purchase</div>
+                   <img src="public/Images/reveiw1.jpg" height="100" width="80">
+                   <div>One person found this helpful</div>
+                   <div class="mt-2"><button>Helpful</button>  &nbsp; Report</div>
+                   <div class="mt-3"><img src="public/Images/review.jpeg" class="rounded-circle" height="30" width="30"> Anetta</div>
+                   <span class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                  </span><span class="fw-bold">&nbsp; fantastic item</span>
+                   </span>
+                   <div>Reviewed in India on 20 July 2023</div>
+                   <div class="text-danger fw-bold h6">Verified Purchase</div>
+                   <p>Fav book, came in good condition</p>
+                   <div class="mt-2"><button>Helpful</button>  &nbsp; Report</div>
+                   <div class="border mt-3">See more reviews</div>
+                   <p class="fw-bold mt-3">Top reviews from other countries</p>
+                   <div class="mt-3"><img src="public/Images/review.jpeg" class="rounded-circle" height="30" width="30">Kerry Kennedy Author</div>
+                   <span class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                  </span><span class="fw-bold">&nbsp; Beautiful, romantic, wild and funny</span>
+                  <div>Reviewed in Spain on 22 June 2023</div>
+                  <div class="text-danger fw-bold">verified purchased</div>
+                  <p>Iris is Declan's assistant. Declan a billionaire wants to be CEO of his organisation and oust his over bearing father. Only there is a stipulation made in his grandfather's will.
+                    He has to marry
+                    He has to have a child</p>
+                    <span class="bi bi-chevron-down text-info"> read more</span>
+                    <div class="border-bottom">Report </div><br>
+                    <div class="bi bi-chevron-down text-info">See more reviews</div>
+                     <div></div>
+                </div>
+          </section>
+          <footer>
+            <div class="border-top mt-3 d-flex justify-content-between border-dark">
+              <div class="mt-2 fw-bold">Customer who brought this item also brought</div>
+              <div class="mt-2">Page 1 of 12</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-1"><img src="public/Images/games.jpg" width="100" height="150">
+              </div>
+              <div class="col-1 ms-5"><img src="public/Images/money.jpeg" width="100" height="150"></div>
+              <div class="col-1 ms-5"><img src="public/Images/below zero.jpg" width="100" height="150"></div>
+              <div class="col-1 ms-5"><img src="public/Images/check.jpeg" width="100" height="150"></div>
+              <div class="col-1 ms-5"><img src="public/Images/final.jpg" width="100" height="150"></div>
+              <div class="col-1 ms-5"><img src="public/Images/alone.jpeg" width="100" height="150"></div>
+              <div class="col-1 ms-5"><img src="public/Images/magic.jpeg" width="100" height="150"></div>
+              <div class="col-1 ms-5"><img src="public/Images/wrath.jpg" width="100" height="150"></div>
+            </div>
+          </footer>
+         </body>
+         </html>
+          

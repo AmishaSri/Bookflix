@@ -1,0 +1,326 @@
+<!doctype html>
+    <html lang="en-IN">
+        <head>
+           <title>Bookflix</title>
+           <meta charset="utf-8">
+           <meta name="viewport" content="=width=device-width,initial-scale=1.0">
+           <meta name="keywords" content="best sellers,rom-com,fiction,non-fiction,mystery,magaines,academics,etc">
+           <meta name="description" content="Digital WonderLand for Readers">
+           <link rel="shortcut icon" href="public/images/favicon.ico">
+           <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+           <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <style>     
+           header{
+            background-color: #AFDBF5;
+           }                                
+          header div:hover{
+            border:4px solid black;
+          }
+          nav div:hover{
+            border:4px solid white;
+          }
+            .cat{
+                background-color:#004792;
+            }
+            dt{
+                position:sticky;
+                background-color:#004792;
+                color:white;
+                font-size: 20px;
+                text-align: center;
+                width:200px;
+                top: 0px;
+            }
+            dd{  
+                font-size:15px; 
+            }
+          .star{
+            color:rgb(252, 122, 1);
+            font-size: 20px;
+          }
+         a{
+          text-decoration: none;  
+         }
+           footer a{
+            color:white;
+            
+           }
+           .footer-title{
+            text-align: center;
+            font-size: 30px;
+            height:50px;
+            background-color:#AFDBF5;
+          }
+          .footer-body{
+            background-color:#004792;
+            color:white;
+            height:350px;
+            border-bottom: 1px solid white;
+            
+        }
+           .footer-foot{
+            background-color: #012169;
+            color:white;
+            height:200px;
+            font-size: 20px;
+            font-weight: bold;
+           }
+        </style>
+        </head>
+        <body class="container-fluid">
+            <header id="home" class="w-100 d-flex justify-content-between">
+                <div class="title fw-bold text-dark  h1"><span class="bi bi-bookmarks-fill"></span>Bookflix</div>
+                <div class="h6 fw-bold mt-2"><span class="bi bi-geo-alt-fill"></span>
+                  Delivery to pincode<br><input type="text" name="pinCode" size="15" pattern="[0-9]{6}"></div>
+                <div class="input-group w-50 p-1">
+                  <span class=" w-25 input-group-text">
+                      <select class="w-100">
+                          <option>Action and Adventures</option>
+                          <option>Arts, Film & Photography</option>
+                          <option>Biographies, Diaries & True Accounts</option>
+                          <option>Business & Economics</option>
+                          <option> Calendars</option>
+                          <option>Children & Young Adults</option>
+                          <option>Comics & Mangas</option>
+                          <option>Computing, Internet & Digital Media</option>
+                          <option>Crafts, Home & Lifestyle</option>
+                          <option>Crime, Thriller & Mystery</option>
+                          <option>Exam Preparation</option>
+                          <option>Fantasy, Horror & Science Fiction</option>
+                          <option>Health, Family & Personal Development</option>
+                          <option>Foreign Language eBooks</option>
+                          <option>Historical Fiction</option>
+                          <option>History</option>
+                          <option> Humour</option>
+                          <option> Language, Linguistics & Writing</option>
+                          <option>Law</option>
+                           <option>Literature & Fiction</option>
+                          <option>Politics</option>
+                          <option> Reference</option>
+                          <option>Religion & Spirituality</option>
+                          <option> <dd>  Romance</option>
+                          <option><dd> Sciences, Technology & Medicine </dd></option>
+                          <option><dd>School Books</dd></option>
+                          <option><dd>Social Sciences</dd></option>
+                          <option><dd> Sports & Outdoors</dd></option>
+                          <option><dd>  Textbooks</dd></option>
+                          <option> <dd> Travel & Tourism</dd></option>   
+                      </select>
+                  </span>
+                  <input class=" w-50 form-control" type="text" placeholder="Search bookflix.in">
+                  <span class="bi bi-search input-group-text bg-warning"></span>
+              </div>
+
+              <details class="mt-3 fw-bold h5">
+                <summary>EN<span class="bi bi-translate"></span></summary>
+                 </details>
+                
+              <div><div class="bi bi-person-circle h5 ms-2 fw-bold"></div>Account</div>
+                <div><div class="bi bi-cart4 h4 me-2 mb-1 fw-bold"></div>Cart</div>
+            </header>
+            <nav class="cat w-100 text-light d-flex justify-content-between p-1">
+                <div class="bi bi-list">All</div>
+                <div> Bookflix eBooks</div>
+                <div>Best Sellers</div>
+                <div>Rent a Book</div>
+                <div>AudioBooks</div>
+                <div>Bookflix Top 100</div>
+                <div>Bookflix Unlimited</div>
+                <div>Bookflix library</div>
+                <div>Sell</div>
+                <div>Customer Services</div>
+                <div>About Bookflix</div>
+            </nav>
+          <section class="row mt-1">
+            <div class="col-2" style="border-right:2px solid grey">
+                <dl> 
+                    <dt>New Arrivals</dt>
+                    <dd>Last 30 days</dd>
+                    <dd>Last 90 days</dd>
+                    <dd> Next 90 days</dd>
+                    <dt>Languages </dt>
+                    <dd><input type="checkbox">English</dd>
+                    <dd><input type="checkbox">Hindi</dd>
+                    <dd><input type="checkbox">Punjabi</dd>
+                    <dd><input type="checkbox">Marathi</dd>
+                    <dd><input type="checkbox">Telgu</dd>
+                    <dd><input type="checkbox">Tamil</dd>
+                    <dt>Categories</dt>
+                       <dd><a href="action&Adventure.html">Action & Adventure</a></dd>
+                        <dd>Arts, Film & Photography</dd>
+                       <dd> Biographies, Diaries & True Accounts</dd>
+                        <dd>Business & Economics</dd>
+                       <dd> Calendars</dd>
+                       <dd>  Children & Young Adults</dd>
+                       <dd> Comics & Mangas</dd>
+                       <dd> Computing, Internet & Digital Media</dd>
+                       <dd> Crafts, Home & Lifestyle</dd>
+                        <dd>Crime, Thriller & Mystery</dd>
+                        <dd>Exam Preparation</dd>
+                       <dd> Fantasy, Horror & Science Fiction</dd>
+                       <dd>  Health, Family & Personal Development</dd>
+                      <dd>Foreign Language eBooks</dd>
+                       <dd> Historical Fiction</dd>
+                       <dd> History</dd>
+                       <dd> Humour</dd>
+                       <dd> Language, Linguistics & Writing</dd>
+                       <dd> Law</dd>
+                        <dd>Literature & Fiction</dd>
+                       <dd> Politics</dd>
+                       <dd> Reference</dd>
+                        <dd>Religion & Spirituality</dd>
+                       <dd>  Romance</dd>
+                        <dd> Sciences, Technology & Medicine  </dd>
+                       <dd>School Books</dd>
+                        <dd>Social Sciences</dd>
+                       <dd> Sports & Outdoors</dd>
+                      <dd>Academics Textbooks</dd>
+                       <dd> Travel & Tourism</dd>   
+                   <dt>Format</dt>
+                   <dd><input type="checkbox">AudioBooks</dd>
+                   <dd><input type="checkbox">Board Books</dd>
+                   <dd><input type="checkbox">Bundle</dd>
+                   <dd><input type="checkbox">HardCover</dd>
+                   <dd><input type="checkbox">Bookflix eBooks</dd>
+                   <dd><input type="checkbox">Paperbacks</dd>
+                <dt>Customer Reviews</dt>
+                <dd class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>&up</dd>
+                <dd class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span><span class="bi bi-star"></span>&up</dd>
+                <dd class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span><span class="bi bi-star-"></span><span class="bi bi-star"></span><span class="bi bi-star"></span>&up</dd>
+                <dd class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star"></span><span class="bi bi-star"></span><span class="bi bi-star"></span><span class="bi bi-star"></span>&up</dd>  
+            <dt>Price </dt>
+                <dd>Under 50</dd>
+                <dd>&#8377;50-&#8377;100</dd>
+                <dd>&#8377;101-&#8377;200</dd>
+                <dd>&#8377;201-&#8377;300</dd>
+                <dd>&#8377;301-&#8377;400</dd>
+                <dd>&#8377;401-&#8377;500</dd>
+                <dd>&#8377;500 & more</dd>
+            <dt>Authors</dt>
+                <dd><input type="checkbox">Chetan Bhagat</dd>
+                <dd><input type="checkbox">Ali HazelWood</dd>
+                <dd><input type="checkbox">Rudyard Kypling</dd>
+                <dd><input type="checkbox">Shakespare</dd>
+                <dd><input type="checkbox">J.K Rowling</dd>
+           <dt>Discount</dt>
+                <dd>10% off & more</dd>
+                <dd>20% off & more</dd>
+                <dd>30% off & more</dd>
+                <dd>40% off & more</dd>
+                <dd>50% off & more</dd>
+            </dl>       
+            </div>
+            <div class="col-10">
+                <div class="d-flex justify-content-around mt-3">
+                  <div><img  class="rounded-circle"src="./public/Images/genre.jpg" height="120" width="120"></div>
+                  <div><img class="rounded-circle" src="./public/Images/special.jpg" height="120" width="120"></div>
+                   <div><img class="rounded-circle" src="./public/Images/new.jpg" height="120" width="120"></div>
+                  <div><img class="rounded-circle" src="./public/Images/best.jpg" height="120" width="120"></div>
+                  <div><img class="rounded-circle"  src="./public/Images/gift.jpg" height="120" width="120"></div>
+                  <div><img class="rounded-circle" src="./public/Images/used.jpg" height="120" width="120"></div>
+                  <div><img class="rounded-circle"  src="./public/Images/rent.jpg" height="120" width="120"></div>
+                </div> 
+                <div class="mt-5">
+                  <img src="./public/Images/sale24.jpg" class="w-100" height="250">
+                </div>
+                <h2 class="fw-bold mt-3">Based on your Interest</h2>
+                <div class="d-flex justify-content-around">
+                  <div class="card">
+                    <img class="card-img-top" src="./public/Images/rich.jpeg">
+                    <div class="card-body">
+                      <div class="card-text fw-bold h4">Robert T. Kiyosaki</div>
+                      <div class="card-text star">
+                      <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>
+                      </div>
+                      <div class="card-text">&#8377; 333</div>
+                      </div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="./public/Images/rich.jpeg">
+                    <div class="card-body">
+                      <div class="card-text fw-bold h4">Robert T. Kiyosaki</div>
+                      <div class="card-text star">
+                      <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>
+                      </div>
+                      <div class="card-text">&#8377; 333</div>
+                      </div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="./public/Images/rich.jpeg">
+                    <div class="card-body">
+                      <div class="card-text fw-bold h4">Robert T. Kiyosaki</div>
+                      <div class="card-text star">
+                      <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>
+                      </div>
+                      <div class="card-text">&#8377; 333</div>
+                      </div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="./public/Images/rich.jpeg">
+                    <div class="card-body">
+                      <div class="card-text fw-bold h4">Robert T. Kiyosaki</div>
+                      <div class="card-text star">
+                      <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>
+                      </div>
+                      <div class="card-text">&#8377; 333</div>
+                      </div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="./public/Images/rich.jpeg" >
+                    <div class="card-body">
+                      <div class="card-text fw-bold h4">Robert T. Kiyosaki</div>
+                      <div class="card-text star">
+                      <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>
+                      </div>
+                      <div class="card-text">&#8377; 333</div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+       
+        <footer class="w-100">
+          <div class="footer-title mt-3 text-dark"><a href="#home">Back to top</a></div>
+            <div class="row mt-2 footer-body">
+                   <div class="col-3">
+                <div class="h4 fw-bold mt-3">Get To Know Us</div>
+                    <div><a href="https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer"> About Us</a></div>
+                    <div><a href="https://amazon.jobs/en/">Careers</a></div>
+                    <div><a href="https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer">Press Releases</a></div>
+                    <div><a href="https://www.amazon.science/">Amazon Science</a></div>
+                </div>
+                <div class="col-3">
+                <div class="h4 fw-bold mt-3">Connect With Us</div>
+                    <div><a href="https://www.facebook.com/AmazonIN/">Facebook</a></div>
+                    <div><a href="https://twitter.com/amazonin?lang=en">Twitter</a></div>
+                    <div> <a href="https://www.instagram.com/amazon/?hl=en">Instagram</a></div>
+                </div>
+                <div class="col-3">
+                <div class="h4 fw-bold mt-3">Make Money With Us</div>
+                    <div><a href="https://www.amazon.in/b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C"> Sell on Amazon</a></div>
+                    <div><a href="https://www.amazon.in/b/?node=16192220031&ref_=map_1_b2b_GW_FT">Sell under Amazon Accelerator</a></div>
+                    <div><a href="https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT">Protect and Build Your Brand</a></div>
+                    <div><a href="https://sell.amazon.in/grow-your-business/amazon-global-selling?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1">Amazon Global Selling</a></div>
+                    <div><a href="https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc">Become an Affiliate</a></div>
+                    <div><a href="https://sell.amazon.in/sell-online/fulfillment-by-amazon?ref_=asin_soa_rd&ld=AWRGINFBAfooter">Fulfilment by Amazon</a></div>
+                    <div><a href="https://advertising.amazon.com/en-gb?ref=Amz.in">Advertise Your Products</a></div>
+                    <div><a href="https://www.amazonpay.in/merchant">Amazon Pay on Merchants</a></div>
+                </div>
+                <div class="col-3">
+                <div class="fw-bold h4 mt-3">Let Us Help You</div>
+                    <div><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GDFU3JS5AL6SYHRD&ref_=footer_covid">COVID-19 and Amazon</a></div>
+                    <div><a href="https://www.amazon.in/gp/css/homepage.html?ref_=footer_ya">Your Account</a></div>
+                    <div><a href="https://www.amazon.in/gp/css/returns/homepage.html?ref_=footer_hy_f_4">Returns Centre</a></div>
+                    <div><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc">100% Purchase Protection</a></div>
+                    <div><a href="https://www.amazon.in/gp/browse.html?node=6967393031&ref_=footer_mobapp">Amazon App Download</a></div>
+                    <div><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he">Help</a></div>
+                </div>
+                </div>
+            <div class="footer-foot"><br>
+                  &copy; copyright bookflix.in since 2023
+                </div>
+        </footer>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        </body>
+            </html>

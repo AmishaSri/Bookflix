@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .line{
+            display: flex;
+            justify-content:baseline;
+    }
+            
+    .circle{
+        border-radius: 80px;
+        height:80px;
+        width:80px;
+        background-color: black;
+        margin-left: 10px;
+        margin-top:10px;
+        animation: list 3s infinite alternate-reverse;
+        position:relative;
+
+        
+        
+    }
+    @keyframes list {
+        0%{
+            background-color: darkblue;
+            top:100px;
+            left:100px;
+        }
+        20%{
+            background-color: blue;
+            left:200px;
+            top:0px;
+
+        }
+        40%{
+            background-color: royalblue;
+            top:100px;
+            left:400px;
+        }
+        60% {
+            background-color: dodgerblue;
+             top: 200px;
+             left: 400px;
+        }
+
+        80%{
+            background-color: aqua;
+            top: 300px;
+            left: 200px
+        }
+        100%{
+            background-color: lightskyblue;
+              top:200px;
+              left:100px;
+        }
+        
+    }
+   
+</style>
+<body>
+ <div class="line">
+    <span class="circle"></span>
+    
+ </div>
+    
+</body>
+</html>

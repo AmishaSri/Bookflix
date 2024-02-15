@@ -1,0 +1,685 @@
+<!doctype html>
+    <html lang="en-IN">
+        <head>
+           <title>Bookflix</title>
+           <link rel="shortcut icon" href="public/images/favicon.ico">
+           <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+           <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+           <meta charset="utf-8">
+           <meta name="viewport" content="=width=device-width,initial-scale=1.0">
+           <meta name="keywords" content="best sellers,rom-com,fiction,non-fiction,mystery,magaines,academics,etc>
+           <meta name="description" content="Digital WonderLand for Readers">
+        <style>
+          header div:hover{
+            border:4px solid black;
+          }
+          nav div:hover{
+            border:4px solid white;
+          }
+            .cat{
+                background-color:#004792;
+            }
+            dt{
+                position:sticky;
+                background-color:#004792;
+                color:white;
+                font-size: 20px;
+                text-align: center;
+                width:200px;
+                top: 0px;
+            }
+            dd{
+                
+                font-weight: bold;
+                font-size:20px; 
+            }
+          .star{
+            color:rgb(252, 122, 1);
+            font-size: 20px;
+          }
+          .card{
+                background-color:lightgreen;
+                height:750px;
+                width:300px;
+
+            }
+             .card-header{
+               background-color: darkcyan;
+               padding-left:40px;
+               padding-top: 20px;
+               height:350px;
+             }
+             .section-foot-foot{
+              background-color: darkcyan;
+              color:lightgreen;
+              font-size: 25px; 
+              text-align: center;
+              height: 40px;  
+              padding-top: 5px;   
+                    }
+               a{
+                text-decoration: none;  
+               }
+           footer a{
+            text-decoration: none; 
+            color:white;
+            
+           }
+           .footer-title{
+            text-align: center;
+            font-size: 30px;
+            background-color:#AFDBF5;
+            height:50px;
+          }
+          .footer-body{
+            background-color:#004792;
+            height:350px;
+          }
+         
+           .footer-foot{
+            height:200px;
+            background-color: #012169;
+            margin-top: -15px;
+            font-size: 20px;
+            text-align: center;
+          
+           }
+        </style>
+        </head>
+        <body class="container-fluid">
+            <header id="home" class="w-100 d-flex justify-content-between" style="background-color:#AFDBF5 ;">
+                <div class="title fw-bold text-dark  h1"><span class="bi bi-bookmarks-fill"></span>Bookflix</div>
+                <div class="h6 fw-bold mt-2"><span class="bi bi-geo-alt-fill"></span>
+                  Delivery to pincode<br><input type="text" name="pinCode" size="15" pattern="[0-9]{6}"></div>
+                   
+
+                <div class="input-group w-50 p-1">
+                  <span class=" w-25 input-group-text">
+                      <select class="w-100">
+                          <option>Action and Adventures</option>
+                          <option>Arts, Film & Photography</option>
+                          <option>Biographies, Diaries & True Accounts</option>
+                          <option>Business & Economics</option>
+                          <option> Calendars</option>
+                          <option>Children & Young Adults</option>
+                          <option>Comics & Mangas</option>
+                          <option>Computing, Internet & Digital Media</option>
+                          <option>Crafts, Home & Lifestyle</option>
+                          <option>Crime, Thriller & Mystery</option>
+                          <option>Exam Preparation</option>
+                          <option> Fantasy, Horror & Science Fiction</option>
+                          <option>Health, Family & Personal Development</option>
+                          <option>Foreign Language eBooks</option>
+                          <option>Historical Fiction</option>
+                          <option>History</option>
+                          <option> Humour</option>
+                          <option> Language, Linguistics & Writing</option>
+                          <option>Law</option>
+                           <option>Literature & Fiction</option>
+                          <option>Politics</option>
+                          <option> Reference</option>
+                          <option>Religion & Spirituality</option>
+                          <option> <dd>  Romance</option>
+                          <option><dd> Sciences, Technology & Medicine </dd></option>
+                          <option><dd>School Books</dd></option>
+                          <option><dd>Social Sciences</dd></option>
+                          <option><dd> Sports & Outdoors</dd></option>
+                          <option><dd>  Textbooks</dd></option>
+                          <option> <dd> Travel & Tourism</dd></option>   
+                      </select>
+                  </span>
+                  <input class=" w-50 form-control" type="text" placeholder="Search bookflix.in">
+                  <span class="bi bi-search input-group-text bg-warning"></span>
+              </div>
+
+              <details class="mt-3 fw-bold h5">
+                <summary>EN<span class="bi bi-translate"></span></summary>
+                 </details>
+                
+              <div><div class="bi bi-person-circle h5 ms-2 fw-bold"></div>Account</div>
+                <div><div class="bi bi-cart4 h4 me-2 mb-1 fw-bold"></div>Cart</div>
+            </header>
+            <nav class="cat w-100 text-light d-flex justify-content-between p-1">
+                <div class="bi bi-list">All</div>
+                <div> Bookflix eBooks</div>
+                <div>Best Sellers</div>
+                <div>AudioBooks</div>
+                <div>Bookflix Top 100</div>
+                <div>Bookflix Unlimited</div>
+                <div>Bookflix library</div>
+                <div>Sell</div>
+                <div>Customer Services</div>
+                <div>About Bookflix</div>
+            </nav>
+            <section class="row mt-1">
+            <div class="col-2">
+                <dl> 
+                <dt>Popular Features   </dt>
+                    <dd>Bookflix's Unlimited</dd>
+                    <dd>Gift Combos</dd>
+                    <dd>Sell Old Books</dd>
+                    <dd>Short Reads</dd>
+                    <dd>Exam HELP Center</dd>
+                    <dd>Become An Author</dd>
+                <dt>Categories   </dt>
+                       <dd><a href="action&Adventure.html">Action & Adventure</a></dd>
+                        <dd>Arts, Film & Photography</dd>
+                       <dd> Biographies, Diaries & True Accounts</dd>
+                        <dd>Business & Economics</dd>
+                       <dd> Calendars</dd>
+                       <dd>  Children & Young Adults</dd>
+                       <dd> Comics & Mangas</dd>
+                       <dd> Computing, Internet & Digital Media</dd>
+                       <dd> Crafts, Home & Lifestyle</dd>
+                        <dd>Crime, Thriller & Mystery</dd>
+                        <dd>Exam Preparation</dd>
+                       <dd> Fantasy, Horror & Science Fiction</dd>
+                       <dd>  Health, Family & Personal Development</dd>
+                      <dd>Foreign Language eBooks</dd>
+                       <dd> Historical Fiction</dd>
+                       <dd> History</dd>
+                       <dd> Humour</dd>
+                       <dd> Language, Linguistics & Writing</dd>
+                       <dd> Law</dd>
+                        <dd>Literature & Fiction</dd>
+                       <dd> Politics</dd>
+                       <dd> Reference</dd>
+                        <dd>Religion & Spirituality</dd>
+                       <dd>  Romance</dd>
+                        <dd> Sciences, Technology & Medicine  </dd>
+                       <dd>School Books</dd>
+                        <dd>Social Sciences</dd>
+                       <dd> Sports & Outdoors</dd>
+                      <dd>  Textbooks</dd>
+                       <dd> Travel & Tourism</dd>   
+                <dt>New Arrivals</dt>
+                    <dd>Coming Soon</dd>
+                    <dd>Last 30 days</dd>
+                    <dd>Last 60 days</dd>
+                    <dd> Last 90 days</dd>
+                <dt>Ebook in Languages </dt>
+                     <dd ><span class="bi bi-circle">English</span></dd>
+                     <dd><span class="bi bi-circle"></span>Hindi</span></dd>
+                     <dd><span class="bi bi-circle"></span>Punjabi</span></dd>
+                     <dd><span class="bi bi-circle"></span>Marathi</span></dd>
+                     <dd><span class="bi bi-circle"></span>Gujrati</span></dd>
+                     <dd><span class="bi bi-circle"></span>Tamil</span></dd>
+                <dt>Customer Reviews</dt>
+                <dd class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>&up</dd>
+                <dd class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span><span class="bi bi-star"></span>&up</dd>
+                <dd class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span><span class="bi bi-star-"></span><span class="bi bi-star"></span><span class="bi bi-star"></span>&up</dd>
+                <dd class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star"></span><span class="bi bi-star"></span><span class="bi bi-star"></span><span class="bi bi-star"></span>&up</dd>  
+            <dt>Price </dt>
+                <dd>Under 50</dd>
+                <dd>50-100</dd>
+                <dd>101-200</dd>
+                <dd>201-300</dd>
+                <dd>301-400</dd>
+                <dd>401-500</dd>
+                <dd>500 & more</dd>
+            <dt>Authors</dt>
+                <dd>Chetan Bhagat</dd>
+                <dd>Ali HazelWood</dd>
+                <dd>Rudyard Kypling</dd>
+                <dd>Shakespare</dd>
+                <dd>J.K Rowling</dd>
+           <dt>Discount</dt>
+                <dd>10% off & more</dd>
+                <dd>20% off & more</dd>
+                <dd>30% off & more</dd>
+                <dd>40% off & more</dd>
+                <dd>50% off & more</dd>
+            </dl>       
+            </div>
+            <div class="col-10">
+                 <div class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" >
+                   <img src="public/Images/Bookflix2.png" class="w-100 d-block" height="300">
+                   </div>
+                   <div class="carousel-item" >
+                    <img src="public/Images/sale24.jpg" class="w-100 d-block"  height="300">
+                    </div>
+                    <div class="carousel-item" >
+                      <img src="public/Images/Bookflix3.png" class="w-100 d-block" height="300">
+                      </div>
+                </div>
+                </div>
+                   <div class="h3 fw-bold border-bottom border-dark mt-2">Inspired by Your WishList</div>
+                     <div class="d-flex justify-content-around">
+                     <div><img src="public/Images/y.jpeg" height="300px" width="200px">
+                      <div>Milk and Honey by Rupi Kaur</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span><span class="bi bi-star"></span><span>15,897</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                       </div>
+                     <div><a href="terms&conditions.html"><img src="public/Images/terms.jpg"height="300px" width="200px"></a>
+                      <div>Terms And Conditions by<br>Lauren Asher</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span><span>35,835</span></div>
+                        <div>Bookflix Price : &#8377;249</div>
+                      </div>
+                     <div><img src="public/Images/frog.jpg"height="300px" width="200px">
+                      <div>Eat that Frog by Brain Tracy</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span><span class="bi bi-star"></span><span>66,123</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                      </div>
+                     <div><img src="public/Images/wash.jpg"height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span><span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                      </div>
+                     <div><img src="public/Images/check.jpeg"height="300px" width="200px">
+                      <div>Check & Mate by Ali HazelWood</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span><span class="bi bi-star"></span><span>11,239</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                      </div>      
+                    </div>
+                           <br><br>
+                    <div class="h3 fw-bold border-bottom border-dark mt-2">Top Picks For You</div>
+                    <div class="d-flex justify-content-around">
+                     <div><img src="public/Images/gita.jpg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span><span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>
+                     <div><img src="public/Images/subtle.jpg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>
+                     <div><img src="public/Images/dog.jpg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>
+                     <div><img src="public/Images/harry.jpeg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>
+                     <div><img src="public/Images/yogi.jpeg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>              
+                    </div>
+                    <br><br>
+                    <div class="h3 fw-bold border-bottom border-dark mt-2">For You In Bookflix Book Deals</div>
+                    <div class="d-flex justify-content-around">
+                     <div><img src="public/Images/listen.jpg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>
+                     <div><img src="public/Images/rich.jpeg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>
+                     <div><img src="public/Images/cook.jpg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>
+                     <div><img src="public/Images/kalam.jpeg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>
+                     <div><img src="public/Images/digimarketing.jpg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>            
+                    </div>
+                    <br><br>
+                    <div class="h3 fw-bold border-bottom border-dark mt-2">Best Seller</div>
+                    <div class="d-flex justify-content-around">
+                     <div><img src="public/Images/magic.jpeg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>
+                     <div><img src="public/Images/speak.jpg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>
+                     <div><img src="public/Images/money.jpeg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>
+                    <div><img src="public/Images/win.jpeg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div> 
+                     <div><img src="public/Images/barbie.jpg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>              
+                    </div>
+                    <br><br>
+                    <div class="h3 fw-bold border-bottom border-dark mt-2">More Books To Explore</div>
+                    <div class="d-flex justify-content-around">
+                     <div><img src="public/Images/age.jpeg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>
+                     <div><img src="public/Images/alihazelwood.jpg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>
+                     <div><img src="public/Images/apart.jpeg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>
+                    <div><img src="public/Images/alone.jpeg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div> 
+                     <div><img src="public/Images/below zero.jpg" height="300px" width="200px">
+                      <div>Girl Wash Your Face <br>by Rachel Hollis</div>
+                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span><span class="bi bi-star-half"></span>
+                        <span class="bi bi-star"></span><span>78,045</span></div>
+                        <div>Bookflix Price : &#8377;378</div>
+                    </div>            
+                    </div>
+                       <div class=" h4 fw-bold border-dark p-2 border-bottom border-top mt-3">1-9 of over 1,000 results for Readers Choice Visitors</div>
+                          <br><br>
+                          <div class="d-flex justify-content-between">
+                            <div class="card">
+                            <div class="card-header"> 
+                               <img src="public/Images/c1.jpg" height="290" width="220" >
+                            </div>
+                            <div class="card-body">
+                               Master Your Emotions: A Practical Guide to Overcome Negativity
+                                and Better Manage Your Feelings (Mastery Series Book 1)
+                                <div>by thibaut meurisse and Kerry J Donovan</div>
+                                <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                   <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                   <span class="bi bi-star"></span><span class="bi bi-chevron-down">9,857</span></div>
+                               <div>Kindle Edition</div>
+                               <div> &#8377;0 BooktrovertsUnLimited</div>
+                               <div>Free with Kindle Unlimited membership</div>
+                               <div><a href="">Learn more</a></div>
+                               <div>Available instantly</div>
+                               <div>Or ₹99 to buy</div>
+                                <div>Great On Kindle: A high quality digital reading experience.</div>
+                            </div>
+                            
+                            </div>
+    
+                            <div class="card">
+                              <div class="card-header"> 
+                                 <img src="public/Images/c2.jpg" height="290" width="220" >
+                              </div>
+                              <div class="card-body">
+                                 Master Your Emotions: A Practical Guide to Overcome Negativity
+                                  and Better Manage Your Feelings (Mastery Series Book 1)
+                                  <div>by thibaut meurisse and Kerry J Donovan</div>
+                                  <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                     <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                     <span class="bi bi-star"></span><span class="bi bi-chevron-down">9,857</span></div>
+                                 <div>Kindle Edition</div>
+                                 <div> &#8377;0 BooktrovertsUnLimited</div>
+                                 <div>Free with Kindle Unlimited membership</div>
+                                 <div><a href="">Learn more</a></div>
+                                 <div>Available instantly</div>
+                                 <div>Or ₹99 to buy</div>
+                                 <div>Great On Kindle: A high quality digital reading experience.</div>
+                              </div>
+                              
+                              </div>
+                              <div class="card">
+                                <div class="card-header"> 
+                                   <img src="public/Images/c3.jpg" height="290" width="220" >
+                                </div>
+                                <div class="card-body">
+                                   Master Your Emotions: A Practical Guide to Overcome Negativity
+                                    and Better Manage Your Feelings (Mastery Series Book 1)
+                                    <div>by thibaut meurisse and Kerry J Donovan</div>
+                                    <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                       <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                       <span class="bi bi-star"></span><span class="bi bi-chevron-down">9,857</span></div>
+                                   <div>Kindle Edition</div>
+                                   <div> &#8377;0 BooktrovertsUnLimited</div>
+                                   <div>Free with Kindle Unlimited membership</div>
+                                   <div><a href="">Learn more</a></div>
+                                   <div>Available instantly</div>
+                                   <div>Or ₹99 to buy</div>
+                                   <div>Great On Kindle: A high quality digital reading experience.</div>
+                                </div>
+                                
+                              </div>
+                      </div>
+                            <br><br>
+    
+                            <div class="d-flex justify-content-between">
+                              <div class="card">
+                              <div class="card-header"> 
+                                 <img src="public/Images/c4.jpg" height="290" width="220" >
+                              </div>
+                              <div class="card-body">
+                                 Master Your Emotions: A Practical Guide to Overcome Negativity
+                                  and Better Manage Your Feelings (Mastery Series Book 1)
+                                  <div>by thibaut meurisse and Kerry J Donovan</div>
+                                  <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                     <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                     <span class="bi bi-star"></span><span class="bi bi-chevron-down">9,857</span></div>
+                                 <div>Kindle Edition</div>
+                                 <div> &#8377;0 BooktrovertsUnLimited</div>
+                                 <div>Free with Kindle Unlimited membership</div>
+                                 <div><a href="">Learn more</a></div>
+                                 <div>Available instantly</div>
+                                 <div>Or ₹99 to buy</div>
+                                  <div>Great On Kindle: A high quality digital reading experience.</div>
+                              </div>
+                             
+                              </div>
+      
+                              <div class="card">
+                                <div class="card-header"> 
+                                   <img src="public/Images/c5.jpg" height="290" width="220" >
+                                </div>
+                                <div class="card-body">
+                                   Master Your Emotions: A Practical Guide to Overcome Negativity
+                                    and Better Manage Your Feelings (Mastery Series Book 1)
+                                    <div>by thibaut meurisse and Kerry J Donovan</div>
+                                    <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                       <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                       <span class="bi bi-star"></span><span class="bi bi-chevron-down">9,857</span></div>
+                                   <div>Kindle Edition</div>
+                                   <div> &#8377;0 BooktrovertsUnLimited</div>
+                                   <div>Free with Kindle Unlimited membership</div>
+                                   <div><a href="">Learn more</a></div>
+                                   <div>Available instantly</div>
+                                   <div>Or ₹99 to buy</div>
+                                   <div>Great On Kindle: A high quality digital reading experience.</div>
+                                </div>
+                                
+                                 </div>
+    
+                                <div class="card">
+                                  <div class="card-header"> 
+                                     <img src="public/Images/c6.jpg" height="290" width="220" >
+                                  </div>
+                                  <div class="card-body">
+                                     Master Your Emotions: A Practical Guide to Overcome Negativity
+                                      and Better Manage Your Feelings (Mastery Series Book 1)
+                                      <div>by thibaut meurisse and Kerry J Donovan</div>
+                                      <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                         <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                         <span class="bi bi-star"></span><span class="bi bi-chevron-down">9,857</span></div>
+                                     <div>Kindle Edition</div>
+                                     <div> &#8377;0 BooktrovertsUnLimited</div>
+                                     <div>Free with Kindle Unlimited membership</div>
+                                     <div><a href="">Learn more</a></div>
+                                     <div>Available instantly</div>
+                                     <div>Or ₹99 to buy</div>
+                                     <div>Great On Kindle: A high quality digital reading experience.</div>
+                                  </div>
+                                 
+                                </div>
+                        </div>
+                          <br><br>  
+                      
+                      <div class="d-flex justify-content-between">
+                        <div class="card">
+                        <div class="card-header"> 
+                           <img src="public/Images/c7.jpg" height="290" width="220" >
+                        </div>
+                        <div class="card-body">
+                           Master Your Emotions: A Practical Guide to Overcome Negativity
+                            and Better Manage Your Feelings (Mastery Series Book 1)
+                            <div>by thibaut meurisse and Kerry J Donovan</div>
+                            <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                               <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                               <span class="bi bi-star"></span><span class="bi bi-chevron-down">9,857</span></div>
+                           <div>Kindle Edition</div>
+                           <div> &#8377;0 BooktrovertsUnLimited</div>
+                           <div>Free with Kindle Unlimited membership</div>
+                           <div><a href="">Learn more</a></div>
+                           <div>Available instantly</div>
+                           <div>Or ₹99 to buy</div>
+                            <div>Great On Kindle: A high quality digital reading experience.</div>
+                        </div>
+                       
+                        </div>
+    
+                        <div class="card">
+                          <div class="card-header"> 
+                             <img src="public/Images/c8.jpg" height="290" width="220" >
+                          </div>
+                          <div class="card-body">
+                             Master Your Emotions: A Practical Guide to Overcome Negativity
+                              and Better Manage Your Feelings (Mastery Series Book 1)
+                              <div>by thibaut meurisse and Kerry J Donovan</div>
+                              <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                 <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                 <span class="bi bi-star"></span><span class="bi bi-chevron-down">9,857</span></div>
+                             <div>Kindle Edition</div>
+                             <div> &#8377;0 BooktrovertsUnLimited</div>
+                             <div>Free with Kindle Unlimited membership</div>
+                             <div><a href="">Learn more</a></div>
+                             <div>Available instantly</div>
+                             <div>Or ₹99 to buy</div>
+                             <div>Great On Kindle: A high quality digital reading experience.</div>
+                          </div>
+                          
+                           </div>
+    
+                          <div class="card">
+                            <div class="card-header"> 
+                               <img src="public/Images/c9.jpg" height="290" width="220" >
+                            </div>
+                            <div class="card-body">
+                               Master Your Emotions: A Practical Guide to Overcome Negativity
+                                and Better Manage Your Feelings (Mastery Series Book 1)
+                                <div>by thibaut meurisse and Kerry J Donovan</div>
+                                <div class="star"><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                   <span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span>
+                                   <span class="bi bi-star"></span><span class="bi bi-chevron-down">9,857</span></div>
+                               <div>Kindle Edition</div>
+                               <div> &#8377;0 BooktrovertsUnLimited</div>
+                               <div>Free with Kindle Unlimited membership</div>
+                               <div><a href="">Learn more</a></div>
+                               <div>Available instantly</div>
+                               <div>Or ₹99 to buy</div>
+                               <div>Great On Kindle: A high quality digital reading experience.</div>
+                            </div>
+                            
+                          </div>
+                          </div><br><br>
+                          
+                      <div class="section-foot-foot fw-bold">See all results</div>
+            </div>
+        </section>
+        <footer>
+          <br><br>
+            <div class="footer-title mt-3"><a href="#home">Back to top</a></div>
+            <div class="row mt-3 footer-body w-100 text-light ms-1">
+                   <div class="col-3">
+                <div class="h4 fw-bold mt-3">Get To Know Us</div>
+                    <div><a href="https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer"> About Us</a></div>
+                    <div><a href="https://amazon.jobs/en/">Careers</a></div>
+                    <div><a href="https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer">Press Releases</a></div>
+                    <div><a href="https://www.amazon.science/">Amazon Science</a></div>
+                </div>
+                <div class="col-3">
+                <div class="h4 fw-bold mt-3">Connect With Us</div>
+                    <div><a href="https://www.facebook.com/AmazonIN/">Facebook</a></div>
+                    <div><a href="https://twitter.com/amazonin?lang=en">Twitter</a></div>
+                    <div> <a href="https://www.instagram.com/amazon/?hl=en">Instagram</a></div>
+                </div>
+                <div class="col-3">
+                <div class="h4 fw-bold mt-3">Make Money With Us</div>
+                    <div><a href="https://www.amazon.in/b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C"> Sell on Amazon</a></div>
+                    <div><a href="https://www.amazon.in/b/?node=16192220031&ref_=map_1_b2b_GW_FT">Sell under Amazon Accelerator</a></div>
+                    <div><a href="https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT">Protect and Build Your Brand</a></div>
+                    <div><a href="https://sell.amazon.in/grow-your-business/amazon-global-selling?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1">Amazon Global Selling</a></div>
+                    <div><a href="https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc">Become an Affiliate</a></div>
+                    <div><a href="https://sell.amazon.in/sell-online/fulfillment-by-amazon?ref_=asin_soa_rd&ld=AWRGINFBAfooter">Fulfilment by Amazon</a></div>
+                    <div><a href="https://advertising.amazon.com/en-gb?ref=Amz.in">Advertise Your Products</a></div>
+                    <div><a href="https://www.amazonpay.in/merchant">Amazon Pay on Merchants</a></div>
+                </div>
+                <div class="col-3">
+                <div class="fw-bold h4 mt-3">Let Us Help You</div>
+                    <div><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GDFU3JS5AL6SYHRD&ref_=footer_covid">COVID-19 and Amazon</a></div>
+                    <div><a href="https://www.amazon.in/gp/css/homepage.html?ref_=footer_ya">Your Account</a></div>
+                    <div><a href="https://www.amazon.in/gp/css/returns/homepage.html?ref_=footer_hy_f_4">Returns Centre</a></div>
+                    <div><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc">100% Purchase Protection</a></div>
+                    <div><a href="https://www.amazon.in/gp/browse.html?node=6967393031&ref_=footer_mobapp">Amazon App Download</a></div>
+                    <div><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he">Help</a></div>
+                </div>
+                </div>
+            <div class="footer-foot fw-bold w-100 text-light border-top border-light border-1"><br>
+                  &copy; copyright bookflix.in since 2023
+                </div>
+        </footer>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        </body>
+            </html>

@@ -1,0 +1,110 @@
+<!doctype html>
+    <html>
+        <head>
+           <title>Bookflix</title>
+        <link rel="shortcut icon" href="public/Images/favicon.ico">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="=width=device-width,initial-scale=1.0">
+        <meta name="keywords" content="best sellers,rom-com,fiction,non-fiction,mystery,magaines,academics,etc>
+        <meta name="description" content="Digital WonderLand for Readers">
+        <style>
+         body{
+            background-size:cover;
+         }
+         header div{
+            color:white;
+            font-size:40px;
+            font-weight: bold;
+            display:flex;
+            justify-content: space-between;
+         }
+         .lang{
+            font-size: 25px;
+            margin-left: 600px;
+            border:1px solid white;
+            
+         }
+        .head{
+         font-size:25px;
+         background-color: red;
+         color:white;
+         font-weight: bold;
+        }
+        .section-heading{
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 140px;
+        }
+       .section-body{
+         background-color: wheat;
+         color:black;
+         font-size: 25px;
+         width:600px;
+         height:50px;
+         margin-top: 20px;
+         margin-left: 500px;
+       }
+      .done{
+         background-color: blue;
+         color:white;
+         margin-top:30px;
+         margin-left:700px;
+         font-size: 30px;
+         font-weight: bold;
+      }
+      .section-footer{
+         font-size: 20px;
+         color:white;
+         text-align:center;
+         font-weight: bold;
+         margin-top: 25px;
+      }
+      .phrase{
+         text-align: center;
+         color: white;
+         font-size: 30px;
+      }
+      a{
+         text-decoration: none;
+         color:white;
+         font-size: 20px;
+      }
+        </style>
+       </head>
+       <body class="container-fluid" background="public/Images/background-pic.png">
+        <header>
+                 <div>
+                 <div><span class="bi bi-bookmarks"></span>Bookflix</div>
+                 <details class="lang">
+                  <summary>Language<span class="bi bi-translate"></span></summary>
+                  <dl>
+                     <dd><a href="index.html">English</a></dd>
+                  <dd><a href="hindi-index.html">हिन्दी</a></dd>
+                  </dl>
+                   </details>
+                 <div class="head"><a href="newUser.html">New User</a><span class="bi bi-person-fill"></span></div> 
+              </div>                  
+        </header>
+        <section>
+         <div class="section-heading">Welcome to the WORLD OF BOOKAHOLICS!</div>
+         <div class="phrase">"I do believe that something Magical can happen when you read a Book." ~J.K Rowling</div>
+         <div>
+            <form id="start">
+            <input class="section-body" type="email" name="emailId" placeholder="Email address or Phone number" autofocus required>
+            <input class="section-body" type="password" name="passWord" placeholder="Password" required minlength="8">
+         </form>
+         </div>
+        <a href="home.html"><input class="done" type="submit" form="start" value="Login"></a>
+         <div class="section-footer">
+            <span><a href="forgot.html">Forgot Password?</a></span>
+            <span> | <a href="know-interest.html">Skip</a></span>
+          </div>
+        </section>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+       </body>  
+    </html>

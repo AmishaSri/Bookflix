@@ -1,0 +1,112 @@
+<!doctype html>
+    <html>
+        <head>
+           <title>Bookflix</title>
+        <link rel="shortcut icon" href="public/Images/favicon.ico">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="=width=device-width,initial-scale=1.0">
+        <meta name="keywords" content="best sellers,rom-com,fiction,non-fiction,mystery,magaines,academics,etc>
+        <meta name="description" content="Digital WonderLand for Readers">
+        <style>
+         body{
+            background-size:cover;
+         }
+         header div{
+            color:white;
+            font-size:40px;
+            font-weight: bold;
+            display:flex;
+            justify-content: space-between;
+            
+         }
+         .lang{
+            font-size: 25px;
+            margin-left: 600px;
+            border:1px solid white;
+            
+         }
+        .head{
+         font-size:25px;
+         background-color: red;
+         color:white;
+         font-weight: bold;
+        }
+        .section-heading{
+            font-size: 50px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 100px;
+        }
+       .section-body{
+         background-color: wheat;
+         color:black;
+         font-size: 25px;
+         width:500px;
+         height:50px;
+         margin-top: 20px;
+         margin-left: 450px;
+       }
+      button{
+         background-color: blue;
+         color:white;
+         margin-top:30px;
+         margin-left:600px;
+         font-size: 30px;
+         font-weight: bold;
+      }
+      .section-footer{
+         font-size: 20px;
+         color:white;
+         text-align:center;
+         font-weight: bold;
+         margin-top: 25px;
+         margin-left: -70px;
+      }
+      .phrase{
+         text-align: center;
+         color: white;
+         font-size: 25px;
+      }
+      a{
+         text-decoration: none;
+         color:white;
+         font-size: 20px;
+      }
+        </style>
+       </head>
+       <body class="container-fluid" background="public/Images/background-pic.png">
+        <header>
+                 <div>
+                 <div> <span class="bi bi-bookmarks"></span>Bookflix</div>
+                 
+                 <details class="lang">
+                  <summary>Language<span class="bi bi-translate"></span></summary>
+                  <dl>
+                     <dd><a href="index.html">English</a></dd>
+                  <dd><a href="hindi-index.html">हिन्दी</a></dd>
+                  </dl>
+                   </details>
+                  
+                 <div class="head"><a href="newUser.html">नए उपयोगकर्ता</a><span class="bi bi-person-fill"></span></div> 
+              </div>                  
+        </header>
+        <section>
+         <div class="section-heading">बुकहॉलिक्स की दुनिया में आपका स्वागत है!</div>
+         <div class="phrase">"मेरा मानना है कि जब आप कोई किताब पढ़ते हैं तो कुछ जादुई घटित हो सकता है|" ~जेके रॉउलिंग</div>
+         <div>
+            <input class="section-body" type="email" name="emailId" placeholder="ईमेल पता या फ़ोन नंबर" required>
+            <input class="section-body" type="password" name="passWord" placeholder="पासवर्ड" required minlength="8">
+               
+         </div>
+        <a href="home.html"><button type="submit">लॉग इन करें</button></a> 
+         <div class="section-footer">
+            <span>पासवर्ड भूल गए?</span>
+            <span> | <a href="know-interest.html">छोडना</a></span>
+          </div>
+
+        </section>
+       </body>  
+    </html>

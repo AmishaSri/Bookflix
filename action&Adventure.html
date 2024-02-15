@@ -1,0 +1,438 @@
+<!doctype html>
+    <html lang="en-IN">
+        <head>
+           <title>Bookflix</title>
+           <link rel="shortcut icon" href="public/images/favicon.ico">
+           <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+           <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+           <meta charset="utf-8">
+           <meta name="viewport" content="=width=device-width,initial-scale=1.0">
+           <meta name="keywords" content="best sellers,rom-com,fiction,non-fiction,mystery,magaines,academics,etc>
+           <meta name="description" content="Digital WonderLand for Readers">
+           <style>
+            
+            .heading1{
+                background-color: lightgreen;
+                height:45px;
+            }
+            .heading2{
+                background-color: darkcyan;
+                color:white;
+            }
+            .heading1 div:hover{
+                 border:3px solid black;
+            }
+            .heading2 div:hover{
+                border:3px solid white;
+            }
+            .section1{
+                border-right:1px solid black;
+            }
+            .section1 dl dd:hover{
+                color:red;
+            }
+            .section1 dl dd{
+                margin-top: -10px;
+            }
+            .bi-star,.bi-star-fill{
+                color:orangered;
+                
+            }
+            .card{
+                background-color:snow;
+                height:400px;
+                width:180px;
+            }
+            .card-top{
+                background-color:gainsboro;
+                width:180px;
+                height:250px;
+                margin-left:-13px;
+                color:darkcyan
+            }
+            a{
+                text-decoration: none; 
+            }
+            footer a{
+            text-decoration: none; 
+          color:white;
+           }
+           .top{
+             font-size:20px;
+           font-weight: bold;
+           }
+            footer div{
+                  margin:10px;
+           }
+         
+          .footer-body{
+            background-color:darkcyan;
+            height:350px;
+            width:100%;
+            color:white;
+             display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr; 
+          }
+         
+           .footer-foot{
+            border-top: 1px solid white;
+            width:100%;
+            height:200px;
+            background-color: rgb(13, 104, 104);
+            margin-top: -10px;
+            color:black;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+          
+           }
+        
+           </style>
+           </head>
+           <body class="container-fluid">
+              <header>
+                <div class="heading1 d-flex justify-content-between ">
+                       <div><span class="bi bi-bookmarks h1 fw-bold">Bookflix</span></div>
+                       <div>Hello<br><span class="bi bi-geo-alt"></span>Select your address</div>
+                    <div class="input-group w-50 p-1">
+                        <span class=" w-25 input-group-text">
+                            <select class="w-100">
+                                <option>Action and Adventures</option>
+                                <option>Arts, Film & Photography</option>
+                                <option>Biographies, Diaries & True Accounts</option>
+                                <option>Business & Economics</option>
+                                <option> Calendars</option>
+                                <option>Children & Young Adults</option>
+                                <option>Comics & Mangas</option>
+                                <option>Computing, Internet & Digital Media</option>
+                                <option>Crafts, Home & Lifestyle</option>
+                                <option>Crime, Thriller & Mystery</option>
+                                <option>Exam Preparation</option>
+                                <option> Fantasy, Horror & Science Fiction</option>
+                                <option>Health, Family & Personal Development</option>
+                                <option>Foreign Language eBooks</option>
+                                <option>Historical Fiction</option>
+                                <option>History</option>
+                                <option> Humour</option>
+                                <option> Language, Linguistics & Writing</option>
+                                <option>Law</option>
+                                 <option>Literature & Fiction</option>
+                                <option>Politics</option>
+                                <option> Reference</option>
+                                <option>Religion & Spirituality</option>
+                                <option> <dd>  Romance</option>
+                                <option><dd> Sciences, Technology & Medicine </dd></option>
+                                <option><dd>School Books</dd></option>
+                                <option><dd>Social Sciences</dd></option>
+                                <option><dd> Sports & Outdoors</dd></option>
+                                <option><dd>  Textbooks</dd></option>
+                                <option> <dd> Travel & Tourism</dd></option>   
+                            </select>
+                        </span>
+                        <input class=" w-50 form-control" type="text" placeholder="search bookflix.in">
+                        <span class="bi bi-search input-group-text bg-warning"></span>
+                    </div>
+                    <div> EN<span class="bi bi-chevron-down"></span></div>
+                    <div>Hello, sign in<br>Account</div>
+                    <div class="bi bi-cart4">Cart</div>
+                </div>
+                <div class="heading2 d-flex justify-content-between">
+                    <div><span class="bi bi-list">All</span></div>
+                    <div>Bookflix eBooks</div>
+                    <div>Best sellers</div>
+                    <div>AudioBooks</div>
+                    <div>Bookflix top 100</div>
+                    <div>Bookflix Unlimited</div>
+                    <div>Bookflix Library</div>
+                    <div>Sell</div>
+                    <div>Customer service</div>
+                    <div>About Bookflix</div>
+                </div>
+              </header>
+              <section class="row">
+                <div class=" section1 col-2" >
+                    <dl>
+                        <dt class="mb-2">New Arrivals</dt>
+                        <dd>Last 30 days</dd>
+                       <dd>Last 90 days</dd>
+                         <dd>Coming Soon</dd>
+                         <dt class="mb-2" >English & Indian Language eBooks</dt>
+                            <dd><input type="checkbox"> English </dd>
+                            <dd><input type="checkbox"> Hindi</dd>
+                            <dd><input type="checkbox"> Marathi</dd>
+                            <dd><input type="checkbox"> Tamil</dd>
+                            <dd><input type="checkbox"> Gujrati</dd>
+                            <dt class="mb-2">Author</dt>
+                            <dd><input type="checkbox"> J K Rowling</dd>
+                            <dd><input type="checkbox"> Yuwa Kartik</dd>
+                            <dd><input type="checkbox"> Mathila Suhi</dd>
+                            <dd><input type="checkbox"> Santosh pathak</dd>
+                            <dd><input type="checkbox"> Akshat Gupta</dd>
+                            <dd><input type="checkbox"> Indhu Novels</dd>
+                           <dt class="mb-2">Avg. Customer Review</dt>
+                           <dd><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span> & up</dd>
+                           <dd><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span><span class="bi bi-star"></span> & up</dd>
+                           <dd><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span><span class="bi bi-star"></span><span class="bi bi-star"></span> & up</dd>
+                           <dd><span class="bi bi-star-fill"></span><span class="bi bi-star"></span><span class="bi bi-star"></span><span class="bi bi-star"></span><span class="bi bi-star"></span> & up</dd>
+                          <dt class="mb-2">Price</dt>
+                          <dd>Under &#8377;50</dd>
+                          <dd>&#8377;50 - 100</dd>
+                          <dd>&#8377;100 - 200</dd>
+                          <dd>&#8377;200 - 500</dd>
+                          <dd>&#8377;500 & above</dd>
+                          <dt class="mb-2">Deals & Discounts</dt>
+                          <dd>All Discounts</dd>
+                          <dd>Today's Deal</dd>
+                          <dt class="mb-2">Discount</dt>
+                          <dd>10% Off or more</dd>
+                          <dd> 25% Off or more</dd>
+                          <dd> 35% Off or more</dd>
+                          <dd>50% Off or more</dd>
+                          <dd>60% Off or more</dd>
+                          <dd>70% Off or more</dd>
+                    </dl>
+                </div>
+                <div class="section2 col-10">
+                    <div><h3 class="fw-bold">Most Gifted</h3></div>
+                    <div class="row">
+                        <div class="col-2 card ms-2">
+                        <div class="card-top"><img class="ms-1"src="public/Images/harry.jpeg" height="250" width="170"></div>
+                        <div class="mt-3 fw-bold h5">&#8377 313</div>
+                        <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                        <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                        </div>
+                        <div class="col-2 card ms-2">
+                        <div class="card-top"><img class="ms-1" src="public/Images/wind.jpg" height="250" width="170"></div>
+                        <div class="mt-3 fw-bold h5">&#8377 313</div>
+                        <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                        <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                        </div>
+                        <div class="col-2 card ms-2">
+                        <div class="card-top h5">&nbsp;BookflixUnlimited<img class="ms-1" src="public/Images/nobel.jpg" height="220" width="170"></div>
+                        <div class="mt-3 fw-bold h5">&#8377 313</div>
+                        <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                        <div><span class="bi bi-star-fi&nbsp; &nbsp;ll"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                        </div>
+                        <div class="col-2 card ms-2">
+                        <div class="card-top"><img class="ms-1" src="public/Images/king.jpg" height="250" width="170"></div>
+                        <div class="mt-3 fw-bold h5">&#8377 313</div>
+                        <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                        <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                        </div>
+                        <div class="col-2 card ms-2">
+                        <div class="card-top h5">&nbsp;BookflixUnlimited<img class="ms-1" src="public/Images/cat.jpg" height="220" width="170"></div>
+                        <div class="mt-3 fw-bold h5">&#8377 313</div>
+                        <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                        <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                        </div>  
+                        <div class="col-2 card ms-2">
+                        <div class="card-top"><img class="ms-1" src="public/Images/hindu.jpg" height="250" width="170"></div>
+                        <div class="mt-3 fw-bold h5">&#8377 313</div>
+                        <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                        <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                        </div>
+                    </div>
+                     <div class="mt-5"><span class="h3 fw-bold">Best Seller</span><span><a href="#">&nbsp; &nbsp; See more</a></span></div> 
+                     <div class="row mt-3">
+                        <div class="col-2 card ms-2">
+                        <div class="card-top"><img class="ms-1"src="public/Images/harry.jpeg" height="250" width="170"></div>
+                        <div class="mt-3 fw-bold h5">&#8377 313</div>
+                        <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                        <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                        </div>
+                        <div class="col-2 card ms-2">
+                        <div class="card-top"><img class="ms-1" src="public/Images/wind.jpg" height="250" width="170"></div>
+                        <div class="mt-3 fw-bold h5">&#8377 313</div>
+                        <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                        <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                        </div>
+                        <div class="col-2 card ms-2">
+                        <div class="card-top h5">&nbsp;BookflixUnlimited<img class="ms-1" src="public/Images/nobel.jpg" height="220" width="170"></div>
+                        <div class="mt-3 fw-bold h5">&#8377 313</div>
+                        <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                        <div><span class="bi bi-star-fi&nbsp; &nbsp;ll"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                        </div>
+                        <div class="col-2 card ms-2">
+                        <div class="card-top"><img class="ms-1" src="public/Images/king.jpg" height="250" width="170"></div>
+                        <div class="mt-3 fw-bold h5">&#8377 313</div>
+                        <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                        <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                        </div>
+                        <div class="col-2 card ms-2">
+                        <div class="card-top h5">&nbsp;BookflixUnlimited<img class="ms-1" src="public/Images/cat.jpg" height="220" width="170"></div>
+                        <div class="mt-3 fw-bold h5">&#8377 313</div>
+                        <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                        <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                        </div>  
+                        <div class="col-2 card ms-2">
+                        <div class="card-top"><img class="ms-1" src="public/Images/hindu.jpg" height="250" width="170"></div>
+                        <div class="mt-3 fw-bold h5">&#8377 313</div>
+                        <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                        <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                        </div>
+                    </div>
+                    <div class="mt-5"><span class="h3 fw-bold">Hot new Releases</span><span><a href="#">&nbsp; &nbsp; See more</a></span></div> 
+                    <div class="row mt-3">
+                       <div class="col-2 card ms-2">
+                       <div class="card-top"><img class="ms-1"src="public/Images/harry.jpeg" height="250" width="170"></div>
+                       <div class="mt-3 fw-bold h5">&#8377 313</div>
+                       <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                       <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                       </div>
+                       <div class="col-2 card ms-2">
+                       <div class="card-top"><img class="ms-1" src="public/Images/wind.jpg" height="250" width="170"></div>
+                       <div class="mt-3 fw-bold h5">&#8377 313</div>
+                       <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                       <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                       </div>
+                       <div class="col-2 card ms-2">
+                       <div class="card-top h5">&nbsp;BookflixUnlimited<img class="ms-1" src="public/Images/nobel.jpg" height="220" width="170"></div>
+                       <div class="mt-3 fw-bold h5">&#8377 313</div>
+                       <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                       <div><span class="bi bi-star-fi&nbsp; &nbsp;ll"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                       </div>
+                       <div class="col-2 card ms-2">
+                       <div class="card-top"><img class="ms-1" src="public/Images/king.jpg" height="250" width="170"></div>
+                       <div class="mt-3 fw-bold h5">&#8377 313</div>
+                       <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                       <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                       </div>
+                       <div class="col-2 card ms-2">
+                       <div class="card-top h5">&nbsp;BookflixUnlimited<img class="ms-1" src="public/Images/cat.jpg" height="220" width="170"></div>
+                       <div class="mt-3 fw-bold h5">&#8377 313</div>
+                       <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                       <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                       </div>  
+                       <div class="col-2 card ms-2">
+                       <div class="card-top"><img class="ms-1" src="public/Images/hindu.jpg" height="250" width="170"></div>
+                       <div class="mt-3 fw-bold h5">&#8377 313</div>
+                       <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                       <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                       </div>
+                   </div>
+
+                   <div class="mt-5"><span class="h3 fw-bold">Most Wished For</span><span><a href="#">&nbsp; &nbsp; See more</a></span></div> 
+                   <div class="row mt-3">
+                      <div class="col-2 card ms-2">
+                      <div class="card-top"><img class="ms-1"src="public/Images/harry.jpeg" height="250" width="170"></div>
+                      <div class="mt-3 fw-bold h5">&#8377 313</div>
+                      <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                      <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                      </div>
+                      <div class="col-2 card ms-2">
+                      <div class="card-top"><img class="ms-1" src="public/Images/wind.jpg" height="250" width="170"></div>
+                      <div class="mt-3 fw-bold h5">&#8377 313</div>
+                      <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                      <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                      </div>
+                      <div class="col-2 card ms-2">
+                      <div class="card-top h5">&nbsp;BookflixUnlimited<img class="ms-4" src="public/Images/nobel.jpg" height="220" width="170"></div>
+                      <div class="mt-3 fw-bold h5">&#8377 313</div>
+                      <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                      <div><span class="bi bi-star-fi&nbsp; &nbsp;ll"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                      </div>
+                      <div class="col-2 card ms-2">
+                      <div class="card-top"><img class="ms-1" src="public/Images/king.jpg" height="250" width="170"></div>
+                      <div class="mt-3 fw-bold h5">&#8377 313</div>
+                      <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                      <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                      </div>
+                      <div class="col-2 card ms-2">
+                      <div class="card-top h5">&nbsp;BookflixUnlimited<img class="ms-1" src="public/Images/cat.jpg" height="220" width="170"></div>
+                      <div class="mt-3 fw-bold h5">&#8377 313</div>
+                      <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                      <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                      </div>  
+                      <div class="col-2 card ms-2">
+                      <div class="card-top"><img class="ms-1" src="public/Images/hindu.jpg" height="250" width="170"></div>
+                      <div class="mt-3 fw-bold h5">&#8377 313</div>
+                      <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                      <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                      </div>
+                  </div>
+                   
+                  <div class="mt-5"><span class="h3 fw-bold">Recommended for you </span><span><a href="#">&nbsp; &nbsp; See more</a></span></div> 
+                  <div class="row mt-3">
+                     <div class="col-2 card ms-2">
+                     <div class="card-top"><img class="ms-1"src="public/Images/harry.jpeg" height="250" width="170"></div>
+                     <div class="mt-3 fw-bold h5">&#8377 313</div>
+                     <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                     <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                     </div>
+                     <div class="col-2 card ms-2">
+                     <div class="card-top"><img class="ms-1" src="public/Images/wind.jpg" height="250" width="170"></div>
+                     <div class="mt-3 fw-bold h5">&#8377 313</div>
+                     <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                     <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                     </div>
+                     <div class="col-2 card ms-2">
+                     <div class="card-top h5">&nbsp;BookflixUnlimited<img class="ms-1" src="public/Images/nobel.jpg" height="220" width="170"></div>
+                     <div class="mt-3 fw-bold h5">&#8377 313</div>
+                     <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                     <div><span class="bi bi-star-fi&nbsp; &nbsp;ll"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                     </div>
+                     <div class="col-2 card ms-2">
+                     <div class="card-top"><img class="ms-1" src="public/Images/king.jpg" height="250" width="170"></div>
+                     <div class="mt-3 fw-bold h5">&#8377 313</div>
+                     <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                     <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                     </div>
+                     <div class="col-2 card ms-2">
+                     <div class="card-top h5">&nbsp; BookflixUnlimited<img class="ms-1" src="public/Images/cat.jpg" height="220" width="170"></div>
+                     <div class="mt-3 fw-bold h5">&#8377 313</div>
+                     <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                     <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                     </div>  
+                     <div class="col-2 card ms-2">
+                     <div class="card-top"><img class="ms-1" src="public/Images/hindu.jpg" height="250" width="170"></div>
+                     <div class="mt-3 fw-bold h5">&#8377 313</div>
+                     <div class="mt-3">Harry Potter and the philosopher of stone</div>
+                     <div><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star-fill"></span><span class="bi bi-star"></span>102,342</div>
+                     </div>
+                 </div>
+                    </div>
+              </section>
+              <footer>
+                <br><br>
+                  <div class="footer-body">
+                         <div>
+                      <div class="top">Get To Know Us</div>
+                          <div><a href="https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer"> About Us</a></div>
+                          <div><a href="https://amazon.jobs/en/">Careers</a></div>
+                          <div><a href="https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer">Press Releases</a></div>
+                          <div><a href="https://www.amazon.science/">Amazon Science</a></div>
+                      </div>
+                      <div>
+                      <div class="top">Connect With Us</div>
+                          <div><a href="https://www.facebook.com/AmazonIN/">Facebook</a></div>
+                          <div><a href="https://twitter.com/amazonin?lang=en">Twitter</a></div>
+                          <div> <a href="https://www.instagram.com/amazon/?hl=en">Instagram</a></div>
+                      </div>
+                      <div>
+                      <div class="top">Make Money With Us</div>
+                          <div><a href="https://www.amazon.in/b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C"> Sell on Amazon</a></div>
+                          <div><a href="https://www.amazon.in/b/?node=16192220031&ref_=map_1_b2b_GW_FT">Sell under Amazon Accelerator</a></div>
+                          <div><a href="https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT">Protect and Build Your Brand</a></div>
+                          <div><a href="https://sell.amazon.in/grow-your-business/amazon-global-selling?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1">Amazon Global Selling</a></div>
+                          <div><a href="https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc">Become an Affiliate</a></div>
+                          <div><a href="https://sell.amazon.in/sell-online/fulfillment-by-amazon?ref_=asin_soa_rd&ld=AWRGINFBAfooter">Fulfilment by Amazon</a></div>
+                          <div><a href="https://advertising.amazon.com/en-gb?ref=Amz.in">Advertise Your Products</a></div>
+                          <div><a href="https://www.amazonpay.in/merchant">Amazon Pay on Merchants</a></div>
+                      </div>
+                      <div>
+                      <div class="top">Let Us Help You</div>
+                          <div><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GDFU3JS5AL6SYHRD&ref_=footer_covid">COVID-19 and Amazon</a></div>
+                          <div><a href="https://www.amazon.in/gp/css/homepage.html?ref_=footer_ya">Your Account</a></div>
+                          <div><a href="https://www.amazon.in/gp/css/returns/homepage.html?ref_=footer_hy_f_4">Returns Centre</a></div>
+                          <div><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc">100% Purchase Protection</a></div>
+                          <div><a href="https://www.amazon.in/gp/browse.html?node=6967393031&ref_=footer_mobapp">Amazon App Download</a></div>
+                          <div><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he">Help</a></div>
+                      </div>
+                      </div>
+                  <div class="footer-foot"><br>
+                        <br>
+                        &copy; copyright bookflix.in since 2023
+                      </div>
+              </footer>
+           </body>
+           </html>
